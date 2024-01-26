@@ -106,7 +106,7 @@ function getCombat({
 export default function getCombatPenalties({ terrain, flanks, totalWidthModifier }) {
   const combats = [];
 
-  for (let divisionWidth = 15; divisionWidth <= 45; divisionWidth += 1) {
+  for (let divisionWidth = 8; divisionWidth <= 45; divisionWidth += 1) {
     const combat = getCombat({
       terrain, divisionWidth, flanks, totalWidthModifier,
     });
